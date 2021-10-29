@@ -1,6 +1,6 @@
 package ru.ibs;
 
-public class PlusTwoString {
+public class ThisClassForMe {
     public String operation(String a,String b){
         return a+b;
     }
@@ -27,6 +27,6 @@ public class PlusTwoString {
         this.b = b;
     }
     public double length(){
-        return 1;
+        return a+b;
     }
 }

@@ -1,20 +1,26 @@
 package ru.ibs;
 
 import org.junit.Assert;
+import org.junit.Before;
 import org.junit.Test;
 
-public class PlusTwoStringTest {
+public class ThisClassForMeTest {
+
+    private ThisClassForMe thisClassForMe;
+
+    @Before
+    public void createNew(){
+        thisClassForMe = new ThisClassForMe();
+    }
 
     @Test
     public void testOperation(){
-        PlusTwoString plusTwoString = new PlusTwoString();
-
-        Assert.assertEquals("aabb",plusTwoString.operation("aa","bb"));
+        Assert.assertEquals("aabb",thisClassForMe.operation("aa","bb"));
     }
 
     @Test
     public void testLength(){
-        PlusTwoString plusTwoString = new PlusTwoString();
-        Assert.assertEquals(0,plusTwoString.length(),1e-9);
+        Assert.assertEquals(0,thisClassForMe.length(),1e-9);
+
     }
 }
