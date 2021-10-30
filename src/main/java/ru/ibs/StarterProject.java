@@ -5,19 +5,14 @@ import java.util.Arrays;
 
 public class StarterProject {
     public static void main(String[] args) {
-    /*   String [] arrayString = new String[10];
         for (int i = 0; i < args.length; i++) {
-            arrayString[i] = args[i];
+            String arStrFin = args[i];
+            methodByStarter(arStrFin);
         }
-        String arStrFin = Arrays.toString(arrayString);
-*/
-
-        //Если вставить прямую ссылку на файл - все работает!//
+        //Вставлять прямые ссылки.
         //  String arStrFin = "M:/projects/txt.txt";
          // String arStrFin = "/projects/txt.txt";
-          String arStrFin = "txt.txt";
-
-        methodByStarter(arStrFin);
+        // String arStrFin = "txt.txt";
     }
     public static void methodByStarter(String str){
      String line;
@@ -27,8 +22,6 @@ public class StarterProject {
             line = bufferedReader.readLine();
             while (line!= null) {
                 int i = Integer.parseInt(line);
-
-
                 if(i%3 == 0 && i%5 == 0){
                     System.out.println("FizzBuzz");
                 }
