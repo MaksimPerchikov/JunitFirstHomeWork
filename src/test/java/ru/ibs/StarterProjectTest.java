@@ -7,7 +7,7 @@ import org.junit.Test;
 import java.io.*;
 
 public class StarterProjectTest {
-    
+
     @Test
     public void testMethodByStarter(){
         String line;

@@ -6,20 +6,23 @@ import java.util.Arrays;
 public class StarterProject {
     public static void main(String[] args) {
         StarterProject starterProject = new StarterProject();
+        Executor executor = new Executor();
         for (int i = 0; i < args.length; i++) {
             String arStrFin = args[i];
-           starterProject.methodByStarter(arStrFin);
+            executor.updater(arStrFin);
+          // starterProject.methodByStarter(arStrFin);
         }
 
         //Вставлять прямые ссылки.
         //  String arStrFin = "M:/projects/txt.txt";
         // String arStrFin = "/projects/txt.txt";
-         //String arStrFin = "txt.txt";
+        // String arStrFin = "txt.txt";
+         //executor.updater(arStrFin);
         //starterProject.methodByStarter(arStrFin);
 ///////////////////////////////////////////////////////////////////////////////////////////////////
      }
 
-    public  void methodByStarter(String str) {
+ /*   public  void methodByStarter(String str) {
        //Изначальный,работающий код!
         StarterProject starterProject = new StarterProject();
         String line;
@@ -47,5 +50,5 @@ public class StarterProject {
 
     public void showResult(String str){
         System.out.println(str);
-    }
+    }*/
 }
